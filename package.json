@@ -1,0 +1,26 @@
+{
+  "name": "playwright-api-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "javascript",
+    "fakerjs",
+    "playwright api testing",
+    "playwright api testing example"
+  ],
+  "author": "Code with Kathy",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.42.1",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^20.11.30",
+    "luxon": "^3.4.4",
+    "rimraf": "^5.0.5"
+  }
+}
