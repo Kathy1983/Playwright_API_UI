@@ -10,8 +10,8 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests',
-  testMatch:["tests/LoginPO.js"],
+  testDir: './tests_api',
+  testMatch:["tests_api/01_post_static_data.spec copy.js"],
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */

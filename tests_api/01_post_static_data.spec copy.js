@@ -1,5 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
+// sample API  https://reqres.in/
+
 test('should be able to create a booking', async ({ request }) => {
     const response = await request.post("/booking", {
         data: {

@@ -1,6 +1,6 @@
-exports.LoginPage = class LoginPage {
+const { expect } = require("@playwright/test");
 
-    
+exports.LoginPage = class LoginPage {
 
 constructor(page)
 {  
@@ -26,7 +26,12 @@ constructor(page)
   await this.page.getByPlaceholder('E-Mail Address').press('Tab');
   await this.PassWord.fill(password);
   await this.SignInbutton.click();
- // await expect(this.page).toHaveText("My Orders");
+
+  // Check login successfull or not
+
+//await expect.soft(this.page.locator("//a[contains(.,'Edit Account')]")).toBeVisible();
+await expect(this.page.locator("//a[contains(.,'Edit Account')]")).toBeVisible();
+
 }
 
 
@@ -38,8 +43,9 @@ async UpdateProfile(randomFirstName)
     await this.page.getByPlaceholder('First Name').click();
     await this.page.getByPlaceholder('First Name').fill(randomFirstName);
     await this.page.getByRole('button', { name: 'Continue' }).click();
- //   await this.page.waitForTimeout(5000);
-     // await this.AlertSuccess.expect.toHaveText("Success: Your account has been successfully updated.");
+   // Expect Login successfully 
+    await expect(this.AlertSuccess).toHaveText("Success: Your account has been successfully updated.");
+
  }
 
  async SignOut()
