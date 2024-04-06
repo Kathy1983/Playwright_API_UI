@@ -46,7 +46,6 @@ await loginPage.InValidLogin(InvalidUsername,password);
   await page.getByPlaceholder('First Name').click();
   await page.getByPlaceholder('First Name').fill('Kathy'+randomFirstName);
   await page.getByRole('button', { name: 'Continue' }).click();
-
   await page.locator("//a[contains(text(),'Logout')]").click();
 */
 
