@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "c:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\playwright.config.ts",
-    "rootDir": "c:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_api",
+    "configFile": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\playwright.config.ts",
+    "rootDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -39,15 +39,15 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "c:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/test-results",
+        "outputDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "c:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_api",
+        "testDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
         "testIgnore": [],
         "testMatch": [
-          "tests_api/01_post_static_data.spec copy.js"
+          "tests_ui/UIBasicsTest.spec.js"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "01_post_static_data.spec copy.js",
-      "file": "01_post_static_data.spec copy.js",
+      "title": "UIBasicsTest.spec.js",
+      "file": "UIBasicsTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "should be able to create a booking",
+          "title": "Second Playwright test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,34 +80,30 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1219,
+                  "duration": 1886,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "{\n  bookingid: \u001b[33m4180\u001b[39m,\n  booking: {\n    firstname: \u001b[32m'Jim'\u001b[39m,\n    lastname: \u001b[32m'Brown'\u001b[39m,\n    totalprice: \u001b[33m111\u001b[39m,\n    depositpaid: \u001b[33mtrue\u001b[39m,\n    bookingdates: { checkin: \u001b[32m'2023-06-01'\u001b[39m, checkout: \u001b[32m'2023-06-15'\u001b[39m },\n    additionalneeds: \u001b[32m'Breakfast'\u001b[39m\n  }\n}\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-05T09:19:17.902Z",
+                  "startTime": "2024-04-06T10:36:27.676Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "43edd22820721e181101-7bede68ca60b596d7eb3",
-          "file": "01_post_static_data.spec copy.js",
-          "line": 5,
-          "column": 1
+          "id": "13dfcc3af7c17fb3be68-840e2c1ea306324b5900",
+          "file": "UIBasicsTest.spec.js",
+          "line": 12,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-05T09:19:17.446Z",
-    "duration": 1698.8339999999998,
+    "startTime": "2024-04-06T10:36:27.159Z",
+    "duration": 3009.628,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

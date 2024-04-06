@@ -10,8 +10,13 @@ import { defineConfig, devices } from '@playwright/test';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests_api',
-  testMatch:["tests_api/01_post_static_data.spec copy.js"],
+  testDir: './tests_ui',
+  testMatch:["tests_ui/UIBasicsTest.spec.js"],
+/* Maximum time one test can run for */
+
+timeout: 30*1000,
+expect:{timeout:5000} ,
+
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
