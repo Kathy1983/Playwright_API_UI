@@ -42,8 +42,8 @@
         "outputDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "id": "firefox",
-        "name": "firefox",
+        "id": "chromium",
+        "name": "chromium",
         "testDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
         "testIgnore": [],
         "testMatch": [
@@ -66,7 +66,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "Second Playwright test",
+          "title": "UI Control",
           "ok": true,
           "tags": [],
           "tests": [
@@ -74,31 +74,27 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
+              "projectId": "chromium",
+              "projectName": "chromium",
               "results": [
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 15783,
+                  "duration": 12410,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Google\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-06T13:36:43.362Z",
+                  "startTime": "2024-04-07T10:57:29.419Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "13dfcc3af7c17fb3be68-519208d803aecf64aa60",
+          "id": "13dfcc3af7c17fb3be68-47a31f1f1c9dbc7c54c3",
           "file": "UIBasicsTest.spec.js",
-          "line": 11,
+          "line": 31,
           "column": 6
         }
       ]
@@ -106,8 +102,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-06T13:36:42.865Z",
-    "duration": 26709.766,
+    "startTime": "2024-04-07T10:57:28.916Z",
+    "duration": 13456.173,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
