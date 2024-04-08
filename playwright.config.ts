@@ -12,7 +12,7 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests_ui',
   //testMatch:["tests_ui/ClientApp.spec.js"],
-  testMatch:["tests_ui/UIBasicsTest.spec.js"],
+  testMatch:["tests_ui/ClientApp.spec.js"],
 /* Maximum time one test can run for */
 
 timeout: 30*1000,
@@ -40,7 +40,7 @@ expect:{timeout:5000} ,
     baseURL: 'https://restful-booker.herokuapp.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */
