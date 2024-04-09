@@ -11,8 +11,8 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests_ui',
-  //testMatch:["tests_ui/ClientApp.spec.js"],
-  testMatch:["tests_ui/ClientApp.spec.js"],
+  testMatch:["tests_ui/*.js"],
+ // testMatch:["tests_ui/ClientApp.spec.js"],
 /* Maximum time one test can run for */
 
 timeout: 30*1000,

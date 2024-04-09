@@ -47,7 +47,7 @@
         "testDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
         "testIgnore": [],
         "testMatch": [
-          "tests_ui/ClientApp.spec.js"
+          "tests_ui/*.js"
         ],
         "timeout": 30000
       }
@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "ClientApp.spec.js",
-      "file": "ClientApp.spec.js",
+      "title": "Calendar.spec.js",
+      "file": "Calendar.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "First Playwright test",
+          "title": "Calendar validations",
           "ok": true,
           "tags": [],
           "tests": [
@@ -78,42 +78,38 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 2,
                   "status": "passed",
-                  "duration": 10695,
+                  "duration": 5352,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  \u001b[32m'ZARA COAT 3'\u001b[39m,\n  \u001b[32m'ADIDAS ORIGINAL'\u001b[39m,\n  \u001b[32m'IPHONE 13 PRO'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m\n]\n"
-                    },
-                    {
-                      "text": "\u001b[33m2\u001b[39m\n"
-                    },
-                    {
-                      "text": " | 66152257a86f8f74dcbb5850 | \n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-09T11:11:07.557Z",
-                  "attachments": []
+                  "startTime": "2024-04-09T14:26:56.044Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\Calendar-Calendar-validations-chromium\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "756b2e3d635df17cc925-b9b46dd391fd3f997544",
-          "file": "ClientApp.spec.js",
+          "id": "3a34bd134fcc3fb0e5fd-5598877e9316c61fc6e4",
+          "file": "Calendar.spec.js",
           "line": 4,
-          "column": 6
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-09T11:11:07.023Z",
-    "duration": 12607.203,
+    "startTime": "2024-04-09T14:26:43.118Z",
+    "duration": 19843.012000000104,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
