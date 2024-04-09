@@ -80,16 +80,22 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9289,
+                  "duration": 10695,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "[\n  \u001b[32m'ZARA COAT 3'\u001b[39m,\n  \u001b[32m'ADIDAS ORIGINAL'\u001b[39m,\n  \u001b[32m'IPHONE 13 PRO'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "\u001b[33m2\u001b[39m\n"
+                    },
+                    {
+                      "text": " | 66152257a86f8f74dcbb5850 | \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-08T13:48:55.228Z",
+                  "startTime": "2024-04-09T11:11:07.557Z",
                   "attachments": []
                 }
               ],
@@ -106,8 +112,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-08T13:48:54.672Z",
-    "duration": 10565.711,
+    "startTime": "2024-04-09T11:11:07.023Z",
+    "duration": 12607.203,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
