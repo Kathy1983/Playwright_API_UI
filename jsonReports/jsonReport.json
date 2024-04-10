@@ -1,7 +1,7 @@
 {
   "config": {
     "configFile": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\playwright.config.ts",
-    "rootDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
+    "rootDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_api",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -44,10 +44,10 @@
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
+        "testDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_api",
         "testIgnore": [],
         "testMatch": [
-          "tests_ui/*.js"
+          "tests_api/*.js"
         ],
         "timeout": 30000
       }
@@ -60,18 +60,18 @@
   },
   "suites": [
     {
-      "title": "MoreValidations.spec.js",
-      "file": "MoreValidations.spec.js",
+      "title": "WebAPIPart1.spec.js",
+      "file": "WebAPIPart1.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Popup validations",
+          "title": "Client App Login",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 0,
+              "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
@@ -80,34 +80,43 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 28959,
+                  "duration": 8755,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "13,522\n"
+                      "text": "This is token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTcxMjc0NzYyNSwiZXhwIjoxNzQ0MzA1MjI1fQ.cigvRRlgTJgaJZriF3Jf05kkRSy9VFO_M7OxZWzUHsk\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'ZARA COAT 3'\u001b[39m,\n  \u001b[32m'ADIDAS ORIGINAL'\u001b[39m,\n  \u001b[32m'IPHONE 13 PRO'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "\u001b[33m2\u001b[39m\n"
+                    },
+                    {
+                      "text": " | 66167471a86f8f74dcbc8b1c | \n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-10T05:34:05.181Z",
+                  "startTime": "2024-04-10T11:13:44.410Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "0bc5ae184176f7ff71e5-369eb6d80da1a0bc3bc0",
-          "file": "MoreValidations.spec.js",
-          "line": 5,
-          "column": 6
+          "id": "2e16e1e8e63bfbf6bb5f-a4f513109498a8e1a18d",
+          "file": "WebAPIPart1.spec.js",
+          "line": 23,
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-10T05:34:04.434Z",
-    "duration": 32872.435,
+    "startTime": "2024-04-10T11:13:43.873Z",
+    "duration": 10406.434,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
