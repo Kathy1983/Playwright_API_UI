@@ -60,56 +60,54 @@
   },
   "suites": [
     {
-      "title": "Calendar.spec.js",
-      "file": "Calendar.spec.js",
+      "title": "MoreValidations.spec.js",
+      "file": "MoreValidations.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Calendar validations",
+          "title": "Popup validations",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 0,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "chromium",
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 0,
                   "status": "passed",
-                  "duration": 5352,
+                  "duration": 28959,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "13,522\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-09T14:26:56.044Z",
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\Calendar-Calendar-validations-chromium\\trace.zip"
-                    }
-                  ]
+                  "startTime": "2024-04-10T05:34:05.181Z",
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "3a34bd134fcc3fb0e5fd-5598877e9316c61fc6e4",
-          "file": "Calendar.spec.js",
-          "line": 4,
-          "column": 1
+          "id": "0bc5ae184176f7ff71e5-369eb6d80da1a0bc3bc0",
+          "file": "MoreValidations.spec.js",
+          "line": 5,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-09T14:26:43.118Z",
-    "duration": 19843.012000000104,
+    "startTime": "2024-04-10T05:34:04.434Z",
+    "duration": 32872.435,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
