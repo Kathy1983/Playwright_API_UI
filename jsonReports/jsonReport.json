@@ -10,9 +10,7 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {
-      "actualWorkers": 1
-    },
+    "metadata": {},
     "preserveOutput": "always",
     "reporter": [
       [
@@ -58,66 +56,21 @@
     "workers": 6,
     "webServer": null
   },
-  "suites": [
+  "suites": [],
+  "errors": [
     {
-      "title": "WebAPIPart1.spec.js",
-      "file": "WebAPIPart1.spec.js",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Client App Login",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 8755,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "This is token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTcxMjc0NzYyNSwiZXhwIjoxNzQ0MzA1MjI1fQ.cigvRRlgTJgaJZriF3Jf05kkRSy9VFO_M7OxZWzUHsk\n"
-                    },
-                    {
-                      "text": "[\n  \u001b[32m'ZARA COAT 3'\u001b[39m,\n  \u001b[32m'ADIDAS ORIGINAL'\u001b[39m,\n  \u001b[32m'IPHONE 13 PRO'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m\n]\n"
-                    },
-                    {
-                      "text": "\u001b[33m2\u001b[39m\n"
-                    },
-                    {
-                      "text": " | 66167471a86f8f74dcbc8b1c | \n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-04-10T11:13:44.410Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "2e16e1e8e63bfbf6bb5f-a4f513109498a8e1a18d",
-          "file": "WebAPIPart1.spec.js",
-          "line": 23,
-          "column": 1
-        }
-      ]
+      "message": "SyntaxError: await is only valid in async functions and the top level bodies of modules",
+      "stack": "SyntaxError: await is only valid in async functions and the top level bodies of modules"
+    },
+    {
+      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
+      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
     }
   ],
-  "errors": [],
   "stats": {
-    "startTime": "2024-04-10T11:13:43.873Z",
-    "duration": 10406.434,
-    "expected": 1,
+    "startTime": "2024-04-11T06:57:47.781Z",
+    "duration": 14.579000000000008,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

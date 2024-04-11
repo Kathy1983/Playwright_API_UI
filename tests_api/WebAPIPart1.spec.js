@@ -1,5 +1,7 @@
-const { test, expect } = require('@playwright/test');
-var Token;
+import { test, expect } from '@playwright/test';
+let Token;
+const orderPayLoad = {orders:[{country:"India",productOrderedId:"6581ca399fd99c85e8ee7f45"}]};
+var OrderID;
 
 test.beforeAll(async ({ request }) => {
     const response = await request.post("https://rahulshettyacademy.com/api/ecom/auth/login", 
@@ -18,7 +20,7 @@ test.beforeAll(async ({ request }) => {
 });
 
 
-test("Client App Login", async({page}) => 
+test("Client App Use Token to Login and create Order", async({page}) => 
 
 {
     page.addInitScript(value =>
@@ -120,6 +122,54 @@ for (let i = 0; i <rows.count() ; ++i )
 
 });
 
+ 
+test.only("Find created Order on History with Creating Order API", async({request , page}) => 
+
+{
+    
+const responseCreatedOrder = await request.post("https://rahulshettyacademy.com/api/ecom/order/create-order", 
+{
+        headers:{
+         // 'Accept':'application/json, text/plain, */*',
+          'Authorization':Token,
+          'Content-Type':'application/json',
+      } ,
+       data: orderPayLoad
+});
+
+  const ResponseJson = await responseCreatedOrder.json();
+  expect(responseCreatedOrder.ok()).toBeTruthy();
+ expect(responseCreatedOrder.status()).toBe(201);
+
+ console.log(ResponseJson);
+  OrderID = await ResponseJson.orders[0];
+  console.log("This is My orderID:" + OrderID);
+
+  page.addInitScript(value =>
+    {
+      window.localStorage.setItem('token',value);
+    }, Token);
+
+    await page.goto("https://rahulshettyacademy.com/client/");
 
 
+await page.locator("//button[@routerlink='/dashboard/myorders']").click();
+await page.locator("tbody").waitFor();
 
+const rows = page.locator("tbody tr");
+
+for (let i = 0; i <rows.count() ; ++i )
+{
+ const rowOrderid =  await rows.nth(i).locator("th").textContent();
+ if (orderID.includes(rowOrderid))
+ {
+  await rows.nth(i).locator("button").first().click();
+  break;
+ }
+ 
+ const orderIdDetails = await page.locator(".col-text").textContent();
+ expect(orderID.includes(orderIdDetails)).toBeTruthy();
+
+}
+
+})
