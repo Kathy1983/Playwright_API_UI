@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 1
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -56,21 +58,75 @@
     "workers": 6,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "SyntaxError: await is only valid in async functions and the top level bodies of modules",
-      "stack": "SyntaxError: await is only valid in async functions and the top level bodies of modules"
-    },
-    {
-      "message": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments.",
-      "stack": "Error: No tests found.\nMake sure that arguments are regular expressions matching test files.\nYou may need to escape symbols like \"$\" or \"*\" and quote the arguments."
+      "title": "API_Common.spec.js",
+      "file": "API_Common.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Find created Order on History with Creating Order API from Utils Common",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "passed",
+                  "duration": 4200,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTcxMjgyMDg5NywiZXhwIjoxNzQ0Mzc4NDk3fQ.rF0fDgV6Ncd2pZzHAXGaFyeuz9a7csLZHbC9O756DzE\n"
+                    },
+                    {
+                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTcxMjgyMDg5NywiZXhwIjoxNzQ0Mzc4NDk3fQ.rF0fDgV6Ncd2pZzHAXGaFyeuz9a7csLZHbC9O756DzE\n"
+                    },
+                    {
+                      "text": "{\n  orders: [ \u001b[32m'661792a2a86f8f74dcbd6d6e'\u001b[39m ],\n  productOrderId: [ \u001b[32m'6581ca399fd99c85e8ee7f45'\u001b[39m ],\n  message: \u001b[32m'Order Placed Successfully'\u001b[39m\n}\n"
+                    },
+                    {
+                      "text": "Order ID: 661792a2a86f8f74dcbd6d6e\n"
+                    },
+                    {
+                      "text": "This is My orderID:[object console]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-04-11T07:34:54.471Z",
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\API_Common-Find-created-Order-on-History-with-Creating-Order-API-from-Utils-Common-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a3335ac02b1df377f457-4dcb9e50fc414cf3ced6",
+          "file": "API_Common.spec.js",
+          "line": 9,
+          "column": 5
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2024-04-11T06:57:47.781Z",
-    "duration": 14.579000000000008,
-    "expected": 0,
+    "startTime": "2024-04-11T07:34:51.713Z",
+    "duration": 7713.8239999997895,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

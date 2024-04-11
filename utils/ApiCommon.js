@@ -42,9 +42,10 @@ async CreateOrder(OrderPayLoad)
     const orderResponseJson =await orderResponse.json();
     console.log(orderResponseJson);
    const orderId = orderResponseJson.orders[0];
-  //  response.orderId = orderId;
+    response.orderId = orderId;
     console.log("Order ID: "+ orderId);
-    return orderId;
+
+    return console;
 
 }
 
