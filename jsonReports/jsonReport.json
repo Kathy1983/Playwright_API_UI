@@ -60,14 +60,14 @@
   },
   "suites": [
     {
-      "title": "API_Common.spec.js",
-      "file": "API_Common.spec.js",
+      "title": "NetworkTest.spec.js",
+      "file": "NetworkTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Find created Order on History with Creating Order API from Utils Common",
-          "ok": true,
+          "title": "Find created Order on History with Creating Order API",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -78,57 +78,77 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 4200,
-                  "errors": [],
+                  "workerIndex": 0,
+                  "status": "timedOut",
+                  "duration": 30006,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\tests_api\\NetworkTest.spec.js",
+                        "column": 12,
+                        "line": 71
+                      },
+                      "message": "Error: page.waitForResponse: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for response \"https://rahulshettyacademy.com/api/ecom/order/get…\"\n============================================================\n\n\u001b[0m \u001b[90m 69 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@routerlink='/dashboard/myorders']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 70 |\u001b[39m \u001b[90m//await page.locator(\"tbody\").waitFor();\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForResponse(\u001b[32m\"https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/*\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 72 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 73 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\".mt-4\"\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 74 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\tests_api\\NetworkTest.spec.js:71:12\u001b[22m"
+                    }
+                  ],
                   "stdout": [
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTcxMjgyMDg5NywiZXhwIjoxNzQ0Mzc4NDk3fQ.rF0fDgV6Ncd2pZzHAXGaFyeuz9a7csLZHbC9O756DzE\n"
+                      "text": "This is token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTcxMjg0MzM0MCwiZXhwIjoxNzQ0NDAwOTQwfQ.Ah8axjr78AazhZpoXWCpLxT_O4-fAVs8FUfZqu82a-M\n"
                     },
                     {
-                      "text": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTcxMjgyMDg5NywiZXhwIjoxNzQ0Mzc4NDk3fQ.rF0fDgV6Ncd2pZzHAXGaFyeuz9a7csLZHbC9O756DzE\n"
+                      "text": "{\n  orders: [ \u001b[32m'6617ea4da86f8f74dcbdf7f1'\u001b[39m ],\n  productOrderId: [ \u001b[32m'6581ca399fd99c85e8ee7f45'\u001b[39m ],\n  message: \u001b[32m'Order Placed Successfully'\u001b[39m\n}\n"
                     },
                     {
-                      "text": "{\n  orders: [ \u001b[32m'661792a2a86f8f74dcbd6d6e'\u001b[39m ],\n  productOrderId: [ \u001b[32m'6581ca399fd99c85e8ee7f45'\u001b[39m ],\n  message: \u001b[32m'Order Placed Successfully'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "Order ID: 661792a2a86f8f74dcbd6d6e\n"
-                    },
-                    {
-                      "text": "This is My orderID:[object console]\n"
+                      "text": "This is My orderID:6617ea4da86f8f74dcbdf7f1\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-11T07:34:54.471Z",
+                  "startTime": "2024-04-11T13:48:58.139Z",
                   "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\NetworkTest-Find-created-Order-on-History-with-Creating-Order-API-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\NetworkTest-Find-created-Order-on-History-with-Creating-Order-API-chromium\\video.webm"
+                    },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\API_Common-Find-created-Order-on-History-with-Creating-Order-API-from-Utils-Common-chromium\\trace.zip"
+                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\NetworkTest-Find-created-Order-on-History-with-Creating-Order-API-chromium\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "a3335ac02b1df377f457-4dcb9e50fc414cf3ced6",
-          "file": "API_Common.spec.js",
-          "line": 9,
-          "column": 5
+          "id": "9675ba6f4c097f451ac9-20986658bac88b0e9fa0",
+          "file": "NetworkTest.spec.js",
+          "line": 25,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-11T07:34:51.713Z",
-    "duration": 7713.8239999997895,
-    "expected": 1,
+    "startTime": "2024-04-11T13:48:57.197Z",
+    "duration": 33200.061,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
