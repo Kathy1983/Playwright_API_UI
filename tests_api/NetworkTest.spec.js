@@ -50,6 +50,7 @@ const responseCreatedOrder = await request.post("https://rahulshettyacademy.com/
     }, Token);
 
     await page.goto("https://rahulshettyacademy.com/client/");
+
 page.route("https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/*",
 
 route=>
@@ -68,9 +69,10 @@ route=>
 
 await page.locator("//button[@routerlink='/dashboard/myorders']").click();
 //await page.locator("tbody").waitFor();
-await page.waitForResponse("https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/*");
+const observePage = await request.get("https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/*");
 
-console.log(await page.locator(".mt-4").textContent());
+console.log("This is My Order page:" + observePage.body());
+//console.log(await page.locator(".mt-4").textContent());
 
 
 })

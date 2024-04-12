@@ -1,7 +1,7 @@
 {
   "config": {
     "configFile": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\playwright.config.ts",
-    "rootDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_api",
+    "rootDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -44,10 +44,10 @@
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_api",
+        "testDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
         "testIgnore": [],
         "testMatch": [
-          "tests_api/*.js"
+          "tests_ui/*.js"
         ],
         "timeout": 30000
       }
@@ -60,14 +60,14 @@
   },
   "suites": [
     {
-      "title": "NetworkTest.spec.js",
-      "file": "NetworkTest.spec.js",
+      "title": "ExcelDemo.spec.js",
+      "file": "ExcelDemo.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Find created Order on History with Creating Order API",
-          "ok": false,
+          "title": "Upload download excel validation",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -79,76 +79,34 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 30006,
-                  "error": {
-                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                  },
-                  "errors": [
-                    {
-                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-                    },
-                    {
-                      "location": {
-                        "file": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\tests_api\\NetworkTest.spec.js",
-                        "column": 12,
-                        "line": 71
-                      },
-                      "message": "Error: page.waitForResponse: Test timeout of 30000ms exceeded.\n=========================== logs ===========================\nwaiting for response \"https://rahulshettyacademy.com/api/ecom/order/get…\"\n============================================================\n\n\u001b[0m \u001b[90m 69 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//button[@routerlink='/dashboard/myorders']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 70 |\u001b[39m \u001b[90m//await page.locator(\"tbody\").waitFor();\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 71 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForResponse(\u001b[32m\"https://rahulshettyacademy.com/api/ecom/order/get-orders-for-customer/*\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 72 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 73 |\u001b[39m console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\".mt-4\"\u001b[39m)\u001b[33m.\u001b[39mtextContent())\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 74 |\u001b[39m\u001b[0m\n\n\u001b[2m    at C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\tests_api\\NetworkTest.spec.js:71:12\u001b[22m"
-                    }
-                  ],
-                  "stdout": [
-                    {
-                      "text": "This is token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2JmMTQ4NzY3ZjFmMTIxNWQyY2EiLCJ1c2VyRW1haWwiOiJhbnNoaWthQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4NzY1NDMyMTAsImlhdCI6MTcxMjg0MzM0MCwiZXhwIjoxNzQ0NDAwOTQwfQ.Ah8axjr78AazhZpoXWCpLxT_O4-fAVs8FUfZqu82a-M\n"
-                    },
-                    {
-                      "text": "{\n  orders: [ \u001b[32m'6617ea4da86f8f74dcbdf7f1'\u001b[39m ],\n  productOrderId: [ \u001b[32m'6581ca399fd99c85e8ee7f45'\u001b[39m ],\n  message: \u001b[32m'Order Placed Successfully'\u001b[39m\n}\n"
-                    },
-                    {
-                      "text": "This is My orderID:6617ea4da86f8f74dcbdf7f1\n"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 4308,
+                  "errors": [],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-11T13:48:58.139Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\NetworkTest-Find-created-Order-on-History-with-Creating-Order-API-chromium\\test-failed-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\NetworkTest-Find-created-Order-on-History-with-Creating-Order-API-chromium\\video.webm"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\D_Dieu_Disk\\Automation_Practice\\playwright-api-testing\\test-results\\NetworkTest-Find-created-Order-on-History-with-Creating-Order-API-chromium\\trace.zip"
-                    }
-                  ]
+                  "startTime": "2024-04-12T10:27:44.548Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "id": "9675ba6f4c097f451ac9-20986658bac88b0e9fa0",
-          "file": "NetworkTest.spec.js",
-          "line": 25,
-          "column": 6
+          "id": "aecb1fdeb2b7b98b9c1d-1178fea27e0801e302a3",
+          "file": "ExcelDemo.spec.js",
+          "line": 44,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-11T13:48:57.197Z",
-    "duration": 33200.061,
-    "expected": 0,
+    "startTime": "2024-04-12T10:27:43.307Z",
+    "duration": 6080.996999999999,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
