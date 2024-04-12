@@ -60,13 +60,13 @@
   },
   "suites": [
     {
-      "title": "ExcelDemo.spec.js",
-      "file": "ExcelDemo.spec.js",
+      "title": "ClientAppPO.spec.js",
+      "file": "ClientAppPO.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Upload download excel validation",
+          "title": "CLient App Login",
           "ok": true,
           "tags": [],
           "tests": [
@@ -80,21 +80,31 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4308,
+                  "duration": 11170,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "[\n  \u001b[32m'ZARA COAT 3'\u001b[39m,\n  \u001b[32m'ADIDAS ORIGINAL'\u001b[39m,\n  \u001b[32m'IPHONE 13 PRO'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "\u001b[33m2\u001b[39m\n"
+                    },
+                    {
+                      "text": " | 6619417ca86f8f74dcbf6cfc | \n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-12T10:27:44.548Z",
+                  "startTime": "2024-04-12T14:13:02.936Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "aecb1fdeb2b7b98b9c1d-1178fea27e0801e302a3",
-          "file": "ExcelDemo.spec.js",
-          "line": 44,
+          "id": "8eb22d89bf82429c0323-842c8cf33f82862fe057",
+          "file": "ClientAppPO.spec.js",
+          "line": 9,
           "column": 5
         }
       ]
@@ -102,8 +112,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-12T10:27:43.307Z",
-    "duration": 6080.996999999999,
+    "startTime": "2024-04-12T14:13:02.455Z",
+    "duration": 12172.75,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,
