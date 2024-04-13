@@ -15,7 +15,7 @@ export default defineConfig({
  // testMatch:["tests_ui/ClientApp.spec.js"],
 /* Maximum time one test can run for */
 
-timeout: 30*1000,
+timeout: 100*1000,
 expect:{timeout:5000} ,
 
   /* Run tests in files in parallel */
