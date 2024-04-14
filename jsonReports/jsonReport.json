@@ -47,28 +47,30 @@
         "testDir": "C:/D_Dieu_Disk/Automation_Practice/playwright-api-testing/tests_ui",
         "testIgnore": [],
         "testMatch": [
-          "tests_ui/*.js"
+          "tests_ui/UIBasicsTest.spec.js"
         ],
         "timeout": 100000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.42.1",
+    "version": "1.43.1",
     "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "ClientAppPO.spec.js",
-      "file": "ClientAppPO.spec.js",
+      "title": "UIBasicsTest.spec.js",
+      "file": "UIBasicsTest.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "CLient App Login",
+          "title": "@Web UI Control",
           "ok": true,
-          "tags": [],
+          "tags": [
+            "Web"
+          ],
           "tests": [
             {
               "timeout": 100000,
@@ -80,40 +82,30 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 10426,
+                  "duration": 10007,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "[\n  \u001b[32m'ZARA COAT 3'\u001b[39m,\n  \u001b[32m'ADIDAS ORIGINAL'\u001b[39m,\n  \u001b[32m'IPHONE 13 PRO'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m,\n  \u001b[32m'Laptop'\u001b[39m\n]\n"
-                    },
-                    {
-                      "text": "\u001b[33m2\u001b[39m\n"
-                    },
-                    {
-                      "text": " | 661a431fa86f8f74dcc0094b | \n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-04-13T08:32:21.688Z",
+                  "startTime": "2024-04-14T13:00:11.479Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "8eb22d89bf82429c0323-842c8cf33f82862fe057",
-          "file": "ClientAppPO.spec.js",
-          "line": 9,
-          "column": 5
+          "id": "13dfcc3af7c17fb3be68-83d127caace47ecdbd90",
+          "file": "UIBasicsTest.spec.js",
+          "line": 32,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-04-13T08:32:21.307Z",
-    "duration": 11307.649000000001,
+    "startTime": "2024-04-14T13:00:10.899Z",
+    "duration": 11819.648,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

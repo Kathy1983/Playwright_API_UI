@@ -1,5 +1,9 @@
 import { chromium, expect, test } from "@playwright/test";
 import { text } from "stream/consumers";
+import { allure } from "allure-playwright";
+
+// returns ChildProcess instance
+
 
 
 test("Second Playwright test", async({page}) => 
@@ -29,7 +33,7 @@ console.log("Alll text contents: " + await cardTitles.allTextContents());
 });
 
 
-test.only("UI Control", async({page}) => 
+test.only("@Web UI Control", async({page}) => 
 
 {
     const UserName = page.locator("#username");
